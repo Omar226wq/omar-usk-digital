@@ -354,3 +354,36 @@ footer p {
     padding: 35px 25px;
   }
 }
+
+/* ================= SCROLL ANIMATIONS ================= */
+
+.service-card,
+.process-card,
+.about-visual,
+.about-content,
+.section-heading,
+.cta-box,
+.contact-box {
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
