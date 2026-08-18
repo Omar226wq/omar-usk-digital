@@ -7,7 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        message.textContent =
-            "Authentication is not connected yet. Please configure a secure backend.";
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value;
+
+        const ADMIN_USERNAME = "admin";
+        const ADMIN_PASSWORD = "OMARUSK@2026";
+
+        if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+            window.location.href = "dashboard.html";
+        } else {
+            message.textContent = "Invalid username or password.";
+        }
     });
 });
