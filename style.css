@@ -387,3 +387,198 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+
+/* ===== OMAR USK DIGITAL - SERVICES & PACKAGES ===== */
+
+.services-section,
+.packages-section,
+.process-section {
+  padding: 80px 20px;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  opacity: .7;
+}
+
+.section-heading h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 0 0 15px;
+}
+
+.section-heading p {
+  opacity: .75;
+  line-height: 1.7;
+}
+
+.services-grid,
+.packages-grid,
+.process-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 24px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card,
+.package-card,
+.process-card {
+  padding: 30px;
+  border: 1px solid rgba(128,128,128,.2);
+  border-radius: 20px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:hover,
+.package-card:hover,
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.service-card h3,
+.package-card h3,
+.process-card h3 {
+  margin: 0 0 12px;
+}
+
+.service-card p,
+.package-card p,
+.process-card p {
+  line-height: 1.7;
+  opacity: .75;
+}
+
+.service-btn,
+.package-btn,
+.cta-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.packages-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.package-card {
+  position: relative;
+}
+
+.featured-package {
+  border-width: 2px;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -13px;
+  right: 20px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.package-name {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.package-card h3 {
+  font-size: 32px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.package-card li {
+  margin: 12px 0;
+  opacity: .8;
+}
+
+.process-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.process-card span {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  opacity: .6;
+}
+
+.final-cta {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-size: clamp(30px, 5vw, 50px);
+  margin-bottom: 15px;
+}
+
+.final-cta p {
+  opacity: .75;
+}
+
+@media (max-width: 900px) {
+  .services-grid,
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section,
+  .packages-section,
+  .process-section {
+    padding: 60px 16px;
+  }
+
+  .services-grid,
+  .packages-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .package-card,
+  .process-card {
+    padding: 24px;
+  }
+}
+
+/* ===== END OMAR USK DIGITAL STYLING ===== */
