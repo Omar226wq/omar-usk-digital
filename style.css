@@ -582,3 +582,98 @@ footer p {
 }
 
 /* ===== END OMAR USK DIGITAL STYLING ===== */
+
+/* ===== OMAR USK DIGITAL - ORDER FORM ===== */
+
+.order-section {
+  padding: 90px 20px;
+}
+
+.order-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid rgba(128,128,128,.2);
+  border-radius: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid rgba(128,128,128,.3);
+  border-radius: 10px;
+  background: transparent;
+  font: inherit;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.order-submit {
+  width: 100%;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.order-note {
+  text-align: center;
+  font-size: 13px;
+  opacity: .65;
+  margin-top: 15px;
+}
+
+.order-success {
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgba(128,128,128,.2);
+}
+
+.order-success[hidden] {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .order-section {
+    padding: 60px 16px;
+  }
+
+  .order-form {
+    padding: 22px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+/* ===== END ORDER FORM ===== */
